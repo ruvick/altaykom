@@ -1,0 +1,68 @@
+// Slider-Index =====================================================================================================================
+
+.slider-bg-wrap {
+  position: relative;
+}
+
+.slider-bg {
+  background: grey;
+
+  &__container {
+    position: relative;
+    z-index: 500;
+  }
+
+  &__slide {
+    position: relative;
+    width: 100%;
+    padding: 103px 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  &__title {
+    color: #fff;
+    font-weight: 100;
+
+    span {
+      line-height: 57.6px;
+      font-weight: 800;
+      margin-top: 6px;
+    }
+  }
+}
+
+.swiper-button-block {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.slider-bg__swiper-button-block {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 43%;
+  right: 2%;
+  width: 32px;
+  height: 75px;
+}
+
+.slider-bg__swiper-button-block .swiper-button {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 32px;
+  flex: 0 0 32px;
+  height: 32px;
+  border: 0.83px solid #fff;
+  border-radius: 0;
+}
+
+.slider-main__slide {
+  background: url('../img/index-bg.jpg');
+}
+
+// ==================================================================================================================================

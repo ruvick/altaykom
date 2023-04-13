@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Продукт"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page page-recurring">
+
+			<section id="product-sec" class="product-sec recurring">
+				<div class="_container">
+					<p id="breadcrumbs">
+						<span>
+							<span>
+								<a href="index.html">
+									Главная
+								</a> /
+								<a href="catalog.html">
+									Каталог
+								</a> /
+								<a href="products.html">
+									Бумажные стаканчики 400 мл
+								</a> /
+								<span class="breadcrumb_last" aria-current="page">
+									Бумажный стаканчик "Team For"
+								</span>
+							</span>
+						</span>
+					</p>
+					<h1>Бумажный стаканчик "Team For"</h1>
+
+					<div class="product__row d-flex">
+						<div class="product__slider _swiper d-flex">
+							<div class="product__slide slider__slide">
+								<img src="img/product/01.jpg" alt="">
+							</div>
+							<div class="product__slide slider__slide">
+								<img src="img/product/01.jpg" alt="">
+							</div>
+						</div>
+
+						<div class="product__descp">
+							<div class="product__charect">
+								<p class="product__price">Цена: 2500 р. / 1000 шт.</p>
+								<p class="product__avail">Под заказ</p>
+								<p class="product__vendor">Артикул: 180B-01-011</p>
+								<p class="product__volume">Объем: 400 мл</p>
+								<p class="product__layers">Количество слоев: 2 слоя</p>
+							</div>
+							<form action="#" class="product__choice d-flex">
+								<div class="product__quantity quantity">
+									<div class="quantity__button quantity__button_minus"></div>
+									<div class="quantity__input">
+										<input autocomplete="off" type="number" name="form[]" value="1">
+									</div>
+									<div class="quantity__button quantity__button_plus"></div>
+								</div>
+								<button class="product__btn btn">В корзину</button>
+							</form>
+							<div class="product__text">
+								<h3>Краткое описание</h3>
+								<p>
+									Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+									осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений
+									в домашних условиях.
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section id="similar-products" class="similar-products">
+				<div class="_container">
+					<h2 class="title">Похожие товары</h2>
+
+				</div>
+			</section>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Каталог"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+
+			<section class="title-sec">
+				<div class="_container">
+					<p id="breadcrumbs">
+						<span>
+							<span>
+								<a href="index.html">
+									Главная
+								</a> -
+								<span class="breadcrumb_last" aria-current="page">
+									Люстры
+								</span>
+							</span>
+						</span>
+					</p>
+					<h1 class="title-sec__title">Люстры</h1>
+				</div>
+			</section>
+
+			<section class="catalog">
+				<div class="_container">
+
+					<div class="catalog__wrap">
+
+						<div class="catalog__sidebar sidebar">
+
+						</div>
+
+						<div class="catalog__main-content main-content">
+
+							<div class="card-row">
+
+								<div class="card-column">
+									<div class="card-box">
+										<div class="card-box-img">
+											<img src="img/cards/01.jpg" alt="">
+										</div>
+										<div class="card-box-descp">
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<nav class="pagination d-flex">
+						<div class="pagination__nav-links d-flex">
+							<a class="pagination__back" href="#">Назад</a>
+							<span class="pagination__numbers">1</span>
+							<a class="pagination__numbers current" href="#">2</a>
+							<a class="pagination__numbers" href="#">3</a>
+							<a class="pagination__numbers" href="#">4</a>
+							<a class="pagination__numbers" href="#">5</a>
+							<div class="pagination__block-dot d-flex">
+								<span class="pagination__dot">.</span>
+								<span class="pagination__dot">.</span>
+								<span class="pagination__dot">.</span>
+							</div>
+							<a class="pagination__numbers" href="#">60</a>
+							<a class="pagination__next" href="#">Вперед</a>
+						</div>
+					</nav>
+
+				</div>
+			</section>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

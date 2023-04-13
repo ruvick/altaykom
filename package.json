@@ -1,0 +1,39 @@
+{
+	"name": "ruvick_start_gulp",
+	"version": "1.0.0",
+	"description": "Start template with Gulp",
+	"author": "ruvick",
+	"private": true,
+	"license": "GNU General Public License (GPL)",
+	"scripts": {
+		"send_to_host": "cd strakhovaniye-ipoteki && scp -C -r * propusw6_asmi@propusw6.beget.tech:ipoteka-strah.ru/public_html",
+		"send_sender": "cd #src && scp sender.php propusw6_asmi@propusw6.beget.tech:ipoteka-strah.ru/public_html",
+		"send_sender_call": "cd #src && scp sender-callback.php propusw6_asmi@propusw6.beget.tech:ipoteka-strah.ru/public_html",
+		"deploy": "gulp build && npm run send_to_host"
+	},
+	"devDependencies": {
+		"browser-sync": "latest",
+		"del": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-clean-css": "latest",
+		"gulp-file-include": "latest",
+		"gulp-fonter": "latest",
+		"gulp-group-css-media-queries": "latest",
+		"gulp-imagemin": "7.1.0",
+		"gulp-newer": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-sass": "^5.1.0",
+		"gulp-ttf2woff": "latest",
+		"gulp-ttf2woff2": "latest",
+		"gulp-uglify-es": "latest",
+		"gulp-version-number": "latest",
+		"gulp-webp-html": "latest",
+		"gulp-webpcss": "latest",
+		"imagemin-webp": "latest",
+		"sass": "^1.53.0",
+		"transform-runtime": "0.0.0",
+		"webp-converter": "2.2.3"
+	}
+}
