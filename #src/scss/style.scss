@@ -65,9 +65,8 @@ h1 {
 }
 
 h2 {
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 52.8 / 32 *100%;
+	font-size: 60px;
+	line-height: 50 / 60 *100%;
 }
 
 h3 {
@@ -83,9 +82,7 @@ h4 {
 }
 
 .title {
-	text-align: center;
-	color: #222222;
-	margin-bottom: 38px;
+	margin-bottom: 40px;
 }
 
 @media (max-width: 768px) {
@@ -171,7 +168,7 @@ h4 {
 }
 
 .section {
-	padding: 0 0;
+	padding: 80px 0;
 }
 
 //===================================================================================================================================
@@ -190,8 +187,47 @@ h4 {
 .main-banner__subtitle {}
 
 //========================================================================================================================================================
-
-
+.our-clients__subtitle {
+	font-size: 26px;
+	line-height: 42px;
+}
+.our-clients__inner {
+	flex-wrap: wrap;
+	margin: 56px -20px 0 -20px;
+}
+.our-clients__column {
+	display: flex;
+	flex: 0 1 25%;
+	padding: 0 10px 20px 10px;
+}
+.our-clients__card {
+	flex: 0 1 100%;
+	height: 260px;
+	padding: 27px 30px;
+	background: #000;
+	border-radius: 30px;
+	overflow: hidden;
+	background-position: 130% 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.our-clients__card-text {
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+}
+.our-clients__card_01 {
+	background-image: url('../img/our-clients/01.png');
+}
+.our-clients__card_02 {
+	background-image: url('../img/our-clients/02.png');
+}
+.our-clients__card_03 {
+	background-image: url('../img/our-clients/03.png');
+}
+.our-clients__card_04 {
+	background-image: url('../img/our-clients/04.png');
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 
