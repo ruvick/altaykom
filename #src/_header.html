@@ -1,62 +1,116 @@
 <header id="header" class="header">
-	<div class="header__container _container">
+  <div class="header__container _container">
+    <div class="header__info d-flex">
+      <div class="header__info-column">
+        <div class="header__info-address address-item">
+          г. Барнаул, ул. Гридасова, 16
+        </div>
+        <a href="tel:+73852462031" class="header__info-phone phone-item"
+          >+7 (3852) 46 20 31</a
+        >
+      </div>
+      <div class="header__info-column header__info-column-logo">
+        <a href="index.html" class="header__logo logo-icon"></a>
+      </div>
+      <div class="header__info-column">
+        <div class="header__info-select">О нас</div>
+        <a href="#" class="header__info-link">Мастер-классы</a>
+        <a href="#" class="header__info-link">Оплата и доставка</a>
+        <a href="#" class="header__info-link">Гарантии</a>
+      </div>
+    </div>
 
-		<div class="header__row d-flex">
+    <div class="header__navigation">
+      <div class="header__navigation-carBtn">
+        <div class="header__navigation-carBtn-text">каталог</div>
+        <div
+          class="icon-menu header__icon-menu carBtn"
+          aria-label="Бургер меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <form
+        action="#"
+        method="get"
+        class="header__navigation-search-form search"
+      >
+        <input
+          type="text"
+          placeholder="Поиск по каталогу"
+          class="search__input"
+          value=""
+          name="search"
+        />
+        <button
+          type="submit"
+          tabindex="2"
+          value=""
+          id="searchsubmit"
+          class="search__btn"
+        ></button>
+      </form>
+      <div class="header__navigation-interface interface">
+        <a href="#" class="interface__link interface__link_enter">Войти</a>
+        <a href="#" class="interface__link interface__link_favourites"
+          >Избранное</a
+        >
+        <a href="#" class="interface__link interface__link_bascet">Корзина</a>
+      </div>
+    </div>
+  </div>
+  <div class="header__lineBlock lineBlock">
+    <div class="_container">
+      <div class="header__lineBlock-inner lineBlock__inner">
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_stocks"
+          >Акции</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_newprd"
+          >Новинки</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_ingredients"
+          >Ингредиенты</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_inventory"
+          >Инвентарь</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_equipment"
+          >Оборудование</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_products"
+          >Наша продукция</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_services"
+          >Услуги</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon lineBlock__navButton_right navButton_icon_wholesalers"
+          >Оптовикам</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
 
-			<a href="index.html" class="logo-icon header__logo">
-				<!-- <? bloginfo("url"); ?> -->
-				<p class="logo-icon__text">Название <span>текст logo</span></p>
-			</a>
-
-			<div class="header__navigation">
-				<div class="header__menu-block"> 
-					<ul class="menu-list header__menu-list d-flex"> 
-						<li class="menu-list__item"><a href="#" class="menu-list__item-link">Пункт 1</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__item-link">Пункт 2</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__item-link">Пункт 3</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__item-link">Пункт 4</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__item-link">Пункт 5</a></li>
-					</ul>
-					<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
-						'container_class' => 'menu__list','container' => false )); ?>  -->
-
-						<div class="search header__search">
-							<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
-								<input type="text" placeholder="Поиск" class="search__input input"
-								value="<?php echo get_search_query() ?>" name="s" id="s">
-								<button type="submit" tabindex="2" value="" id="searchsubmit" class="search__btn"></button>
-							</form>
-						</div>
-					</div>
-					<button class="mob-search-btn header__mob-search-btn"></button>
-
-					<div class="contacts header__contacts d-flex">
-						<a href="tel:84951700000" class="contacts__phone header__phone">8 (495) 170-00-00</a>
-						<!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
-						<p class="contacts__time-phone header__time-phone">Звонить с 08:00 до 22:00</p>
-						<a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
-					</div>
-					<a href="tel:84951700000" class="mob-phone-icon header__mob-phone-icon"></a>
-					<!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a> -->
-
-					<a href="#" class="bascket-icon"><span class="bascket-icon__number bascet_counter">1</span></a>
-
-					<div class="icon-menu header__icon-menu" aria-label="Бургер меню"> 
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-		<!-- Полоса прокрутки в шапке -->
-		<div id="scroll-progress"></div>
-	</header>
-
-	<!-- Мобильное меню -->
-	<div class="mob-menu header__mob-menu">
+<!-- Мобильное меню -->
+<!-- <div class="mob-menu header__mob-menu">
 		<ul class="mob-menu__list">
 			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 1</a></li> 
 			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 2</a></li>
@@ -64,16 +118,14 @@
 			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 4</a></li>
 			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 5</a></li>
 		</ul>
-	<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
-		'container_class' => 'mob-menu__list','container' => false )); ?>  -->
 		<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
-	</div>
+	</div> -->
 
-	<!-- Строка мобильного поиска -->
-	<div class="search header__search-mob">
+<!-- Строка мобильного поиска -->
+<!-- <div class="search header__search-mob">
 		<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
 			<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
 			id="s">
 			<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
 		</form>
-	</div>
+	</div> -->

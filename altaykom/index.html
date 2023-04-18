@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <link rel="stylesheet" href="css/fancybox.css"> -->
+	<link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">
+	<link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">
+	<link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">
+	<link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header id="header" class="header">
+  <div class="header__container _container">
+    <div class="header__info d-flex">
+      <div class="header__info-column">
+        <div class="header__info-address address-item">
+          г. Барнаул, ул. Гридасова, 16
+        </div>
+        <a href="tel:+73852462031" class="header__info-phone phone-item"
+          >+7 (3852) 46 20 31</a
+        >
+      </div>
+      <div class="header__info-column header__info-column-logo">
+        <a href="index.html" class="header__logo logo-icon"></a>
+      </div>
+      <div class="header__info-column">
+        <div class="header__info-select">О нас</div>
+        <a href="#" class="header__info-link">Мастер-классы</a>
+        <a href="#" class="header__info-link">Оплата и доставка</a>
+        <a href="#" class="header__info-link">Гарантии</a>
+      </div>
+    </div>
+
+    <div class="header__navigation">
+      <div class="header__navigation-carBtn">
+        <div class="header__navigation-carBtn-text">каталог</div>
+        <div
+          class="icon-menu header__icon-menu carBtn"
+          aria-label="Бургер меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <form
+        action="#"
+        method="get"
+        class="header__navigation-search-form search"
+      >
+        <input
+          type="text"
+          placeholder="Поиск по каталогу"
+          class="search__input"
+          value=""
+          name="search"
+        />
+        <button
+          type="submit"
+          tabindex="2"
+          value=""
+          id="searchsubmit"
+          class="search__btn"
+        ></button>
+      </form>
+      <div class="header__navigation-interface interface">
+        <a href="#" class="interface__link interface__link_enter">Войти</a>
+        <a href="#" class="interface__link interface__link_favourites"
+          >Избранное</a
+        >
+        <a href="#" class="interface__link interface__link_bascet">Корзина</a>
+      </div>
+    </div>
+  </div>
+  <div class="header__lineBlock lineBlock">
+    <div class="_container">
+      <div class="header__lineBlock-inner lineBlock__inner">
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_stocks"
+          >Акции</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_newprd"
+          >Новинки</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_ingredients"
+          >Ингредиенты</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_inventory"
+          >Инвентарь</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_equipment"
+          >Оборудование</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_products"
+          >Наша продукция</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon navButton_icon_services"
+          >Услуги</a
+        >
+        <a
+          href="#"
+          class="lineBlock__navButton navButton navButton_icon lineBlock__navButton_right navButton_icon_wholesalers"
+          >Оптовикам</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Мобильное меню -->
+<!-- <div class="mob-menu header__mob-menu">
+		<ul class="mob-menu__list">
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 1</a></li> 
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 2</a></li>
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 3</a></li>
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 4</a></li>
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 5</a></li>
+		</ul>
+		<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+	</div> -->
+
+<!-- Строка мобильного поиска -->
+<!-- <div class="search header__search-mob">
+		<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
+			<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
+			id="s">
+			<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
+		</form>
+	</div> -->
+
+      <main class="page">
+        
+
+        <!-- <section id="main-banner" class="main-banner section">
+          <div class="_container">
+            <h2 class="main-banner__title"></h2>
+            <p class="main-banner__subtitle"></p>
+          </div>
+        </section> -->
+
+        <section id="about" class="about section">
+          <div class="_container">
+            <h2 class="__title title"></h2>
+            <p class="__subtitle"></p>
+          </div>
+        </section>
+
+        <section id="about" class="about section">
+          <div class="_container">
+            <h2 class="__title title"></h2>
+          </div>
+        </section>
+
+        <section id="about" class="about section">
+          <div class="_container">
+            <h2 class="__title title"></h2>
+          </div>
+        </section>
+      </main>
+      <div class="btn-up btn-up_hide"></div>
+      <footer id="footer" class="footer">
+  <div class="footer__container _container">
+    <div class="footer__row d-flex"></div>
+  </div>
+</footer>
+
+    </div>
+    <!-- Popup-с формой -->
+<div class="popup popup_callback">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
+			<div class="popup__item d-flex">
+				<div class="popup__img">
+					<img src="img/popup.jpg" alt="">
+				</div>
+				<div class="popup__form-block">
+					<h2>Заказать звонок</h2>
+					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
+					<form action="#" class="form">
+						<div class="form__line">
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
+								class="popup__form-input input _req">
+							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"
+								class="popup__form-input input _phone _req">
+							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Email"
+								class="popup__form-input input _email _req">
+						</div>
+						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
+								конфиденциальности</a></p>
+						<button class="popup__form-btn form__btn btn">Заказать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
+<!-- =============================================================================================================================== -->
+
+
+<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
+		</div>
+	</div>
+</div>
+<!-- =============================================================================================================================== -->
+
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
+		</div>
+	</div>
+</div>
+<!-- =============================================================================================================================== -->
+
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+<!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> -->
+<!-- =============================================================================================================================== -->
+
+<!-- Popup-CSS -->
+<!-- <div id="popup-2" class="popup-2">
+	<a href="#" class="popup__area-2"></a>
+	<div class="popup__body-2">
+		<div class="popup__content-2">
+
+			<a href="#" class="popup__close-2">Close</a>
+			<div class="popup__title">Заказать ворота Дешево!</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+
+		</div>
+	</div>
+</div> -->
+<!-- <a href="#popup-2" class="heading-info__button popup-link"></a> --> <!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+  </body>
+</html>
