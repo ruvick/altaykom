@@ -1,5 +1,111 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
+// Поиск (Поиск по сайту)
+.search {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #E3E3E3;
+	border-radius: 25px;
+}
+
+//<КНОПКИ> ====================================================================================================
+
+// Блок линии (Блок с двумя горизонтальными линиями)
+.lineBlock {
+	width: 100%;
+	padding: 19px 0;
+	min-height: 64px;
+	border-top: 1px solid #E3E3E3;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+// Большие кнопки (Показать еще, Показать все, Написать нам)
+.bigButton {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Lack';
+	line-height: 22px;
+	padding: 15px 35px;
+	border: 1px solid #221F20;
+	border-radius: 25px;
+}
+.bigButton_icon {
+	&::before{
+		content:''; 
+		float: left; 
+		width: 22px;
+		flex: 0 0 22px; 
+		height: 22px; 
+		margin-left: 18px; 
+		background-size: 100%; 
+		background-position: 0 0; 
+		background-repeat: no-repeat; 
+		
+	}
+}
+
+// Кнопки навигации (Ссылки в шапке)
+.navButton {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+}
+.navButton_icon {
+	&::after{
+		content:''; 
+		float: right; 
+		width: 24px;
+		flex: 0 0 24px; 
+		height: 24px; 
+		margin-right: 6px;
+		background-size: 100%; 
+		background-position: 0 0; 
+		background-repeat: no-repeat; 
+		
+	}
+}
+
+// Кнопка вверх
+.btn-up {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  background-color: #3166b4;
+  right: 20px;
+  bottom: 0;
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px; */
+  cursor: pointer;
+}
+.btn-up::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+.btn-up_hide {
+  display: none;
+}
+// <div class="btn-up btn-up_hide"></div>
+//</КНОПКИ> ====================================================================================================
+
+
+
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
