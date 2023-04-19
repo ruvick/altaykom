@@ -174,7 +174,78 @@ h4 {
 
 .form__error {
   color: red;
+  margin-top: 3px;
   margin-bottom: 10px;
+}
+
+.form__line {
+  width: 100%;
+}
+
+input[type=range] {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  outline: none;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  padding: 0px 20px;
+  color: #8F8E8E;
+  border-radius: 15px;
+  border: 1px solid #E3E3E3;
+}
+.input._focus {
+  border: 1px solid #000;
+}
+.input._error {
+  border: 1px solid red;
+}
+
+textarea.input {
+  resize: none;
+  padding: 5px 10px;
+}
+
+::-webkit-input-placeholder {
+  color: #8F8E8E;
+}
+
+::-moz-placeholder {
+  color: #8F8E8E;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #8F8E8E;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #8F8E8E;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .btn {
@@ -184,7 +255,6 @@ h4 {
   text-align: center;
   font-size: 18px;
   padding: 16px 30px;
-  margin-top: 40px;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 15px;
@@ -199,6 +269,19 @@ h4 {
 }
 .button._fw {
   width: 100%;
+}
+
+.form__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  padding: 16px 30px;
+  color: #fff;
+  border: 1px solid #221F20;
+  border-radius: 15px;
+  background: #221F20;
 }
 
 .switch-block__label {
@@ -374,71 +457,6 @@ input[type=checkbox]:checked + .switch-block__label {
 }
 .select._active .select__options {
   display: block;
-}
-
-input[type=range] {
-  cursor: pointer;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel],
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=tel]:focus,
-textarea:focus {
-  outline: none;
-}
-
-.input {
-  display: flex;
-  width: 100%;
-  height: 30px;
-  padding: 0px 15px;
-  border-radius: 5px;
-  border: 1px solid #000;
-}
-.input._focus {
-  background: grey;
-}
-.input._error {
-  border: 1px solid red;
-}
-
-textarea.input {
-  resize: none;
-  padding: 5px 10px;
-}
-
-::-webkit-input-placeholder {
-  color: rgba(133, 132, 132, 0.4784313725);
-}
-
-::-moz-placeholder {
-  color: rgba(133, 132, 132, 0.4784313725);
-}
-
-/* Firefox 19+ */
-:-moz-placeholder {
-  color: rgba(133, 132, 132, 0.4784313725);
-}
-
-/* Firefox 18- */
-:-ms-input-placeholder {
-  color: rgba(133, 132, 132, 0.4784313725);
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
-  -webkit-appearance: none;
-  margin: 0;
-  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .checkbox {
@@ -3826,7 +3844,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .our-clients__inner {
   flex-wrap: wrap;
-  margin: 56px -20px 0 -20px;
+  margin: 56px -10px 0 -10px;
 }
 
 .our-clients__column {
@@ -3871,6 +3889,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .sending__banner {
   position: relative;
+  justify-content: space-between;
+  align-items: flex-end;
   min-height: 176px;
   color: #fff;
   padding: 50px 60px;
@@ -3895,6 +3915,31 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .sending__banner-title {
   font-size: 44px;
   line-height: 38px;
+}
+
+.sending__banner-form {
+  display: flex;
+  align-items: center;
+  width: 396px;
+}
+
+.sending__banner-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 46px;
+  margin-left: -19%;
+}
+.sending__banner-form-btn::before {
+  content: "";
+  float: left;
+  flex: 0 0 30px;
+  height: 12px;
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfNzA3IiBkYXRhLW5hbWU9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMIDcwNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzAuMTExIiBoZWlnaHQ9IjEyLjIyMiIgdmlld0JveD0iMCAwIDMwLjExMSAxMi4yMjIiPg0KICA8cGF0aCBpZD0iTmV4dCIgZD0iTTUuMjM3LDEuNTczYTEsMSwwLDAsMSwxLjc0OCwwTDExLjQsOS41MTRBMSwxLDAsMCwxLDEwLjUyMywxMUgxLjdBMSwxLDAsMCwxLC44MjUsOS41MTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMC4xMTEpIHJvdGF0ZSg5MCkiIGZpbGw9IiNmZmYiLz4NCiAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF8xNzExIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAxNzExIiBkPSJNMTY3OC41LDQwODkuNzIyaC0yMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2NTguNSAtNDA4My4yMjMpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+DQo=");
 }
 
 @media (max-width: 1200px) {

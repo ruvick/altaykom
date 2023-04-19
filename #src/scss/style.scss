@@ -310,7 +310,7 @@ h4 {
 }
 .our-clients__inner {
 	flex-wrap: wrap;
-	margin: 56px -20px 0 -20px;
+	margin: 56px -10px 0 -10px;
 }
 .our-clients__column {
 	display: flex;
@@ -351,6 +351,8 @@ h4 {
 }
 .sending__banner {
 	position: relative;
+	justify-content: space-between;
+	align-items: flex-end;
 	min-height: 176px;
 	color: #fff;
 	padding: 50px 60px;
@@ -373,6 +375,30 @@ h4 {
 	line-height: 38px;
 }
 .sending__banner-form {
+	display: flex;
+	align-items: center;
+	width: 396px;
+}
+.sending__banner-form-input {
+
+}
+.sending__banner-form-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 46px;
+	margin-left: -19%;
+	&::before{
+		content:''; 
+		float: left; 
+		flex: 0 0 30px; 
+		height: 12px; 
+		background-size: 100%; 
+		background-position: 0 0; 
+		background-repeat: no-repeat; 
+		background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfNzA3IiBkYXRhLW5hbWU9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMIDcwNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzAuMTExIiBoZWlnaHQ9IjEyLjIyMiIgdmlld0JveD0iMCAwIDMwLjExMSAxMi4yMjIiPg0KICA8cGF0aCBpZD0iTmV4dCIgZD0iTTUuMjM3LDEuNTczYTEsMSwwLDAsMSwxLjc0OCwwTDExLjQsOS41MTRBMSwxLDAsMCwxLDEwLjUyMywxMUgxLjdBMSwxLDAsMCwxLC44MjUsOS41MTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMC4xMTEpIHJvdGF0ZSg5MCkiIGZpbGw9IiNmZmYiLz4NCiAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF8xNzExIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAxNzExIiBkPSJNMTY3OC41LDQwODkuNzIyaC0yMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2NTguNSAtNDA4My4yMjMpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+DQo=');
+	}
 }
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
