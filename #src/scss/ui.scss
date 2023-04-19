@@ -66,6 +66,21 @@
 	margin-left: auto;
 }
 
+// Блок для кнопок фильтров (Показать еще, Показать все, Написать нам)
+.filterBlock {
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+// Кнопки фильтры 
+.filterBtn {
+	font-size: 14px;
+	line-height: 20px;
+	padding: 4px 10px 4px 10px;
+	border: 1px solid #E3E3E3;
+	border-radius: 15px;
+}
+
 // Большие кнопки (Показать еще, Показать все, Написать нам)
 .bigButton {
 	display: inline-flex;
