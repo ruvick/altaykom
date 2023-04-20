@@ -46,21 +46,21 @@ if (mobsearch) {
 // })
 
 // Плавная прокрутка
-const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+// const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
 
-smotScrollElems.forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault()
-    console.log(event);
+// smotScrollElems.forEach(link => {
+//   link.addEventListener('click', (event) => {
+//     event.preventDefault()
+//     console.log(event);
 
-    const id = link.getAttribute('href').substring(1)
-    console.log('id : ', id);
+//     const id = link.getAttribute('href').substring(1)
+//     console.log('id : ', id);
 
-    document.getElementById(id).scrollIntoView({
-      behavior: 'smooth'
-    });
-  })
-});
+//     document.getElementById(id).scrollIntoView({
+//       behavior: 'smooth'
+//     });
+//   })
+// });
 
 
 // Кнопка вверх
@@ -68,7 +68,7 @@ const btnUp = {
   el: document.querySelector('.btn-up'),
   show() {
     // удалим у кнопки класс btn-up_hide
-    this.el.classList.remove('btn-up_hide');
+    this.el.classList.remove('btn-up_hide'); 
   },
   hide() {
     // добавим к кнопке класс btn-up_hide
