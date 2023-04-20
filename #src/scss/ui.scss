@@ -189,8 +189,136 @@
 // <div class="btn-up btn-up_hide"></div>
 //</КНОПКИ> ====================================================================================================
 
+// Swiper-Slider
+.sliderSec {
+	padding: 25px 0;
+}
+._swiper {
+	overflow: hidden;
 
+	//.swiper-wrapper
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+		box-sizing: content-box;
+		display: flex;
+		position: relative;
+	}
 
+	&.swiper-container-vertical {
+		.swiper-wrapper {
+			flex-direction: column;
+		}
+	}
+
+	&.swiper-container-autoheight {
+		.swiper-wrapper {
+			align-items: flex-start;
+		}
+	}
+}
+
+.swiper-container-initialized {
+	.swiper-slide {
+		flex-shrink: 0;
+		// transition-property: transform;
+	}
+}
+
+.swiper-container-android {
+	.swiper-slide,
+	.swiper-wrapper {
+		transform: translate3d(0px, 0, 0);
+	}
+}
+
+.swiper-button-lock {
+	display: none !important;
+}
+
+.sliderSec__container {
+	position: relative;
+}
+
+// Arrows
+.swiper-button__inner {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 40%;
+	// left: 0;
+	z-index: 5000;
+	width: 100%;
+}
+.swiper-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 56px;
+	height: 56px;
+	border: 1px solid #E3E3E3;
+	border-radius: 15px;
+	background: #fff;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		float: left;
+		width: 13.3px;
+		flex: 0 0 13.3px;
+		height: 12px;
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+.swiper-button-next {
+	left: -5%;
+
+	&:before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMy4zMzMiIHZpZXdCb3g9IjAgMCAxMiAxMy4zMzMiPg0KICA8cGF0aCBpZD0iTmV4dCIgZD0iTTQuOTE4LDMuMTQ3YTIsMiwwLDAsMSwzLjUsMGwzLjI2OCw1Ljg4MkEyLDIsMCwwLDEsOS45MzQsMTJIMy40QTIsMiwwLDAsMSwxLjY1MSw5LjAyOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMTMuMzMzKSByb3RhdGUoLTkwKSIgZmlsbD0iIzIyMWYyMCIvPg0KPC9zdmc+DQo=');
+	}
+}
+
+.swiper-button-prev {
+	right: -5%;
+
+	&:before {
+		transform: rotate(180deg);
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMy4zMzMiIHZpZXdCb3g9IjAgMCAxMiAxMy4zMzMiPg0KICA8cGF0aCBpZD0iTmV4dCIgZD0iTTQuOTE4LDMuMTQ3YTIsMiwwLDAsMSwzLjUsMGwzLjI2OCw1Ljg4MkEyLDIsMCwwLDEsOS45MzQsMTJIMy40QTIsMiwwLDAsMSwxLjY1MSw5LjAyOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMTMuMzMzKSByb3RhdGUoLTkwKSIgZmlsbD0iIzIyMWYyMCIvPg0KPC9zdmc+DQo=');
+	}
+}
+
+// Dotts
+.swiper-pagination-bullets {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 31px;
+}
+
+.swiper-pagination-bullet {
+	flex: 0 0 10px;
+	height: 10px;
+	background: #660B1D;
+	border-radius: 50%;
+	opacity: 0.6;
+	cursor: pointer;
+	margin-right: 20px;
+
+	&:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+.swiper-pagination-bullet-active {
+	flex: 0 0 15px;
+	height: 15px;
+	background: #660B1D;
+	opacity: 1;
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
@@ -504,123 +632,6 @@ body.ie {
 	-webkit-filter: grayscale(0);
 	-moz-filter: grayscale(0);
 	-o-filter: grayscale(0);
-}
-
-//====================================================================================================
-
-// Swiper-Slider
-._swiper {
-	overflow: hidden;
-
-	//.swiper-wrapper
-	.swiper-wrapper {
-		width: 100%;
-		height: 100%;
-		box-sizing: content-box;
-		display: flex;
-		position: relative;
-	}
-
-	&.swiper-container-vertical {
-		.swiper-wrapper {
-			flex-direction: column;
-		}
-	}
-
-	&.swiper-container-autoheight {
-		.swiper-wrapper {
-			align-items: flex-start;
-		}
-	}
-}
-
-.swiper-container-initialized {
-	.swiper-slide {
-		flex-shrink: 0;
-		// transition-property: transform;
-	}
-}
-
-.swiper-container-android {
-
-	.swiper-slide,
-	.swiper-wrapper {
-		transform: translate3d(0px, 0, 0);
-	}
-}
-
-.swiper-button-lock {
-	display: none !important;
-}
-
-// Arrows
-.swiper-button {
-	position: absolute;
-	top: 28%;
-	z-index: 5000;
-	width: 43px;
-	height: 43px;
-	border: 2px solid #fff;
-	border-radius: 50%;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	&:before {
-		content: '';
-		float: left;
-		flex: 0 0 8px;
-		height: 12px;
-		background-size: 100%;
-		background-position: 0 0;
-		background-repeat: no-repeat;
-	}
-}
-
-.swiper-button-next {
-	left: 2%;
-
-	&:before {
-		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDggMTIiPg0KICA8aW1hZ2UgaWQ9ImNoZXZyb24tcmlnaHQiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUFnQUFBQU1DQVlBQUFCZm52eWRBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBRTVKUkVGVUdGZGovUC8vUHdNVzBBRVU0d2ZpTEVZc0NrQ1M1VkJOOXVnS2tDV3pnSXFtSXl2QWtBU1pBbE9BVlJLbUFLY2swUXBBQ3ZGYUFRc0d2STdFcVloUVFGbGlVd0J6RTRpdUFBQm9MVGhndUxFelFRQUFBQUJKUlU1RXJrSmdnZz09Ii8+DQo8L3N2Zz4NCg==');
-	}
-}
-
-.swiper-button-prev {
-	right: 2%;
-
-	&:before {
-		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDggMTIiPg0KICA8aW1hZ2UgaWQ9ImNoZXZyb24tcmlnaHQiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUFnQUFBQU1DQVlBQUFCZm52eWRBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBRXRKUkVGVUdGZGovUC8vUHdNUWRBQXhQeEJuQVRGWUFBWVlnUW9zZ0p6alVJRVo2SXBBQ2tCeW1VQThEWnNpbUFLY2lwQVZZRldFcmdCREVja0tNQnhMdENQeGVwT29nTUlaMUFEcjlVRVpZdlZ1b3dBQUFBQkpSVTVFcmtKZ2dnPT0iLz4NCjwvc3ZnPg0K');
-	}
-}
-
-// Dotts
-.swiper-pagination-bullets {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 31px;
-}
-
-.swiper-pagination-bullet {
-	flex: 0 0 10px;
-	height: 10px;
-	background: #660B1D;
-	border-radius: 50%;
-	opacity: 0.6;
-	cursor: pointer;
-	margin-right: 20px;
-
-	&:last-child {
-		margin: 0px 0px 0px 0px;
-	}
-}
-
-.swiper-pagination-bullet-active {
-	flex: 0 0 15px;
-	height: 15px;
-	background: #660B1D;
-	opacity: 1;
 }
 
 //====================================================================================================

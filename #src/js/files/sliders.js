@@ -61,7 +61,7 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) { }
 
 // Сюда пишем класс нашего слайдера и меняем переменную
-let sliderBg = new Swiper('.slider-bg', {
+let sliderInfo = new Swiper('.sliderInfo', {
 	// effect: 'fade',
 	autoplay: {
 		delay: 3000,
@@ -70,13 +70,13 @@ let sliderBg = new Swiper('.slider-bg', {
 
 	observer: true,
 	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 0, //отступ в пикселях
+	slidesPerView: 3,
+	spaceBetween: 20, //отступ в пикселях
 	autoHeight: true,
 	speed: 2000,
 	//touchRatio: 0,
 	//simulateTouch: false,
-	loop: true, //циклично
+	// loop: true, //циклично
 	// slidesPerGroup: 3, //по 3 слайда
 	// slideToClickedSlide: true, //клик по слайду
 	//preloadImages: false,
@@ -88,8 +88,8 @@ let sliderBg = new Swiper('.slider-bg', {
 	//},
 	// Arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.sslider-info__button-next',
+		prevEl: '.slider-info__button-prev',
 	},
 	/*
 	breakpoints: {

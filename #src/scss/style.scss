@@ -164,7 +164,7 @@ h4 {
 .page {
 	flex: 1 1 auto;
 	// padding: 35px 0; 
-	// padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 80px;
 }
 
@@ -195,6 +195,28 @@ h4 {
 	display: flex;
 	flex: 0 0 auto;
 	padding: 0 2px 5px 2px;
+}
+//========================================================================================================================================================
+.sliderInfo__inner {
+	display: flex;
+}
+.slider-info__slide {
+	// flex: 0 1 460px;
+	height: 270px;
+	overflow: hidden;
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.slider-info__slide_01 {
+	background-image: url('../img/slider-info/01.jpg');
+}
+.slider-info__slide_02 {
+	background-image: url('../img/slider-info/02.jpg');
+}
+.slider-info__slide_03 {
+	background-image: url('../img/slider-info/03.jpg');
 }
 //========================================================================================================================================================
 
