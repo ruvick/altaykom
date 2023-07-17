@@ -1,0 +1,521 @@
+<!-- Пример  -->
+<div id="popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">Закрыть</button>
+      <div class="popup__text">Заказать</div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальные окна ------------------------------------------------------------------------------------------------------------->
+
+<!-- Заказать услугу -->
+<div id="order-service" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+      <div class="popup__content-title">Заказать услугу</div>
+      <div class="popup__content-subtitle">
+        Оставьте заявку, и наш менеджер свяжется с Вами в ближайшее время
+      </div>
+      <form action="#" class="popup__form form">
+        <div class="form__line">
+
+					<div class="submission-form__input popup__form-input input">
+						<label for="name-inp" class="submission-form__label">Имя</label>
+						<input id="name-inp" type="text" name="name" data-validate data-required="name"> 
+					</div>
+
+					<div class="submission-form__input popup__form-input input">
+						<label for="phone-inp" class="submission-form__label">Телефон*</label>
+						<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">   
+					</div>
+
+					<div class="submission-form__input popup__form-textarea input">
+						<label for="email-in" class="submission-form__label">Комментарий</label>
+						<textarea id="email-in" type="text" name="message"  data-validate></textarea>
+					</div>
+
+          <div class="popup__form-confirmation">
+            Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку
+            <a href="#" class="popup__form-confirmation-link text-animation">персональных данных</a>
+          </div>
+          <button type="submit" class="popup__form-btn btn btn_black">
+            отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Заказать товар -->
+<div id="order-product" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+      <div class="popup__content-title">Заказать товар</div>
+      <div class="popup__content-subtitle">
+        Оставьте заявку, и наш менеджер свяжется с Вами в ближайшее время
+      </div>
+      <form action="#" class="popup__form form">
+        <div class="form__line">
+
+					<div class="submission-form__input popup__form-input input">
+						<label for="name-inp" class="submission-form__label">Имя</label>
+						<input id="name-inp" type="text" name="name" data-validate data-required="name"> 
+					</div>
+
+					<div class="submission-form__input popup__form-input input">
+						<label for="phone-inp" class="submission-form__label">Телефон*</label>
+						<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">   
+					</div>
+
+					<div class="submission-form__input popup__form-textarea input">
+						<label for="email-in" class="submission-form__label">Комментарий</label>
+						<textarea id="email-in" type="text" name="message"  data-validate></textarea>
+					</div>
+
+          <div class="popup__form-confirmation">
+            Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку
+            <a href="#" class="popup__form-confirmation-link text-animation">персональных данных</a>
+          </div>
+          <button type="submit" class="popup__form-btn btn btn_black">
+            отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Создать новую корзину -->
+<div id="new-bascet" aria-hidden="true" class="new-list-popup popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+      <div class="popup__content-title">Создать новую корзну</div>
+      <form action="#" class="popup__form form">
+        <div class="form__line">
+          <input type="text" name="name" placeholder="Новая корзина" class="popup__form-input input" />
+
+					<div class="new-bascet__color-block">
+
+						<div class="new-bascet__color-block-column">
+							<label class="new-bascet__color-btn color-btn violet-bg">
+								<input class="color-btn__input" checked type="radio" name="radio">
+								<span class="color-btn__check">
+									<svg>
+										<use xlink:href="#check-white"></use>
+									</svg>
+								</span>
+							</label>
+						</div>
+
+						<div class="new-bascet__color-block-column">
+							<label class="new-bascet__color-btn color-btn brown-bg">
+								<input class="color-btn__input" type="radio" name="radio">
+								<span class="color-btn__check">
+									<svg>
+										<use xlink:href="#check-white"></use>
+									</svg>
+								</span>
+							</label>
+						</div>
+
+						<div class="new-bascet__color-block-column">
+							<label class="new-bascet__color-btn color-btn green-bg">
+								<input class="color-btn__input" type="radio" name="radio">
+								<span class="color-btn__check">
+									<svg>
+										<use xlink:href="#check-white"></use>
+									</svg>
+								</span>
+							</label>
+						</div>
+
+						<div class="new-bascet__color-block-column">
+							<label class="new-bascet__color-btn color-btn pink-bg">
+								<input class="color-btn__input" type="radio" name="radio">
+								<span class="color-btn__check">
+									<svg>
+										<use xlink:href="#check-white"></use>
+									</svg>
+								</span>
+							</label>
+						</div>
+
+						<div class="new-bascet__color-block-column">
+							<label class="new-bascet__color-btn color-btn blue-bg">
+								<input class="color-btn__input" type="radio" name="radio">
+								<span class="color-btn__check">
+									<svg>
+										<use xlink:href="#check-white"></use>
+									</svg>
+								</span>
+							</label>
+						</div>
+
+						<div class="new-bascet__color-block-column">
+							<label class="new-bascet__color-btn color-btn orange-bg">
+								<input class="color-btn__input" type="radio" name="radio">
+								<span class="color-btn__check">
+									<svg>
+										<use xlink:href="#check-white"></use>
+									</svg>
+								</span>
+							</label>
+						</div>
+
+					</div>
+
+					<div class="popup__btn-block">
+					<button type="reset" class="popup__form-btn btn">
+            отмена
+          </button>
+          <button type="submit" class="popup__form-btn btn btn_black">
+            сохранить
+          </button>
+				</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Новый список -->
+<div id="new-list" aria-hidden="true" class="new-list-popup popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+      <div class="popup__content-title">Новый список</div>
+      <form action="#" class="popup__form form">
+        <div class="form__line">
+          <input type="text" name="name" placeholder="Название" class="popup__form-input input" />
+          <button type="submit" class="popup__form-btn btn btn_black">
+            создать
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Редактировать профиль. Физлицо -->
+<div id="edit-profile-person" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content submission-form submission-form_big">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+      <form action="#" class="submission-form__form">
+        <div class="form__line">
+          <div class="submission-form__item">
+            <div class="submission-form__title">Редактировать профиль</div>
+          </div>
+
+          <div class="submission-form__item">
+            <div class="submission-form__title-low">Личные данные</div>
+
+						<div class="submission-form__input input input">
+							<label for="name-inpt" class="submission-form__label">ФИО</label>
+							<input id="name-inpt" type="text" name="name" data-validate data-required="name"> 
+						</div>
+
+						<div class="submission-form__input input">
+							<label for="email-inpte" class="submission-form__label">Email*</label>
+							<input id="email-inpte" type="text" name="email" data-validate data-required="email">
+						</div>
+	
+						<div class="submission-form__input input">
+							<label for="phone-inpt" class="submission-form__label">Телефон*</label>
+							<input id="phone-inpt" type="tel" name="phone" data-validate data-required="tel">   
+						</div>
+
+          </div>
+
+          <div class="submission-form__item">
+            <div class="submission-form__title-low">Данные для доставки</div>
+            <div class="search-form">
+              <input type="text" placeholder="Барнаул, Алтайский край, Сибирь, Россия" class="search-form__input"
+                value="" name="search" />
+              <span tabindex="1" class="search-form__btn-closed">
+                <svg class="search-form__btn-closed-icon">
+                  <use xlink:href="#popup-close"></use>
+                </svg>
+              </span>
+              <button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
+            </div>
+
+						<div class="submission-form__input input">
+							<label for="address-inp" class="submission-form__label">Адрес доставки*</label>
+							<input id="address-inp" type="text" name="address" data-validate data-required="addres">
+						</div> 
+
+						<div class="submission-form__input input">
+							<label for="index-inp" class="submission-form__label">Индекс</label>
+							<input id="index-inp" type="number" name="index" data-validate data-required="index">  
+						</div> 
+
+          </div>
+
+          <button type="submit" class="submission-form__button btn">
+            сохранить
+          </button>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- Редактировать профиль. Юрлицо -->
+<div id="edit-profile-entity" aria-hidden="true" class="edit-profile-entity__popup popup">
+  <div class="popup__wrapper">
+    <div class="popup__content submission-form">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+      <form action="#" class="submission-form__form">
+        <div class="form__line">
+          <div class="submission-form__item">
+            <div class="submission-form__title">Редактировать профиль</div>
+          </div>
+
+          <div class="submission-form__item">
+            <div class="submission-form__title-low">Компания</div>
+
+            <div class="submission-form__column">
+							<div class="submission-form__input input">
+								<label for="name-comp-inp" class="submission-form__label">Название компании*</label>
+								<input id="name-comp-inp" type="text" name="form[]" data-validate>
+							</div> 
+
+							<div class="submission-form__input input">
+								<label for="legaladdress-inp" class="submission-form__label">Юридический адрес</label>
+								<input id="legaladdress-inp" type="text" name="form[]" data-validate>
+							</div> 
+            </div>
+
+            <div class="submission-form__column">
+							<div class="submission-form__input input">
+								<label for="bank-inp" class="submission-form__label">Банк</label>
+								<input id="bank-inp" type="text" name="form[]" data-validate>
+							</div> 
+							<div class="submission-form__input input">
+								<label for="score-inp" class="submission-form__label">Расчетный счет</label>
+								<input id="score-inp" type="number" name="form[]" data-validate>
+							</div> 
+            </div>
+
+            <div class="submission-form__column">
+							<div class="submission-form__input input">
+								<label for="inn-inp" class="submission-form__label">ИНН*</label>
+								<input id="inn-inp" type="number" name="form[]" data-validate>
+							</div> 
+							<div class="submission-form__input input">
+								<label for="kpp-inp" class="submission-form__label">КПП</label>
+								<input id="kpp-inp" type="number" name="form[]" data-validate>
+							</div> 
+            </div>
+
+            <div class="submission-form__column">
+							<div class="submission-form__input input">
+								<label for="bik-inp" class="submission-form__label">БИК Банка</label>
+								<input id="bik-inp" type="number" name="form[]" data-validate>
+							</div> 
+            </div>
+          </div>
+
+          <div class="submission-form__item">
+            <div class="submission-form__title-low">Контактное лицо</div>
+
+            <div class="submission-form__column">
+							<div class="submission-form__input input">
+								<label for="name-inp" class="submission-form__label">ФИО*</label>
+								<input id="name-inp" type="text" name="name" data-validate data-required="name"> 
+							</div>
+
+							<div class="submission-form__input input">
+								<label for="email-inp" class="submission-form__label">Email*</label>
+								<input id="email-inp" type="text" name="email" data-validate data-required="email">
+							</div>
+            </div>
+
+            <div class="submission-form__column">
+							<div class="submission-form__input input">
+								<label for="phone-inp" class="submission-form__label">Телефон*</label>
+								<input id="phone-inp" type="number" name="phone" data-validate data-required="tel"> 
+							</div>
+            </div>
+
+          </div>
+
+          <div class="submission-form__item">
+            <div class="submission-form__title-low">Данные для доставки</div>
+            <div class="search-form">
+              <input type="text" placeholder="Барнаул, Алтайский край, Сибирь, Россия" class="search-form__input"
+                value="" name="search" />
+              <span tabindex="1" class="search-form__btn-closed">
+                <svg class="search-form__btn-closed-icon">
+                  <use xlink:href="#popup-close"></use>
+                </svg>
+              </span>
+              <button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
+            </div>
+
+            <div class="submission-form__column">
+							<div class="submission-form__input input">
+								<label for="address-inp" class="submission-form__label">Адрес доставки*</label>
+								<input id="address-inp" type="text" name="address" data-validate data-required="addres">
+							</div> 
+							<div class="submission-form__input input">
+								<label for="index-inp" class="submission-form__label">Индекс</label>
+								<input id="index-inp" type="number" name="index" data-validate data-required="index">  
+							</div> 
+            </div>
+
+          </div>
+
+          <button type="submit" class="submission-form__button btn">
+            сохранить
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- Похожие товары -->
+<div id="similar-products" aria-hidden="true" class="similar-products-popup popup">
+  <div class="popup__wrapper">
+    <div class="popup__content submission-form">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+
+      <div class="submission-form__item">
+        <div class="submission-form__title">Похожие товары</div>
+      </div>
+
+      <div class="similar-products-popup__inner">
+        @@include('/components/_similar-products-block.htm',{})
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Оставить отзыв -->
+<div id="leave-feedback" aria-hidden="true" class="leave-feedback-popup popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+      <div class="popup__content-title">Оставить отзыв</div>
+
+      <div class="popup__rating rating rating_set">
+        <div class="rating__body">
+          <div class="rating__active"></div>
+          <div class="rating__items">
+            <input type="radio" class="rating__item" value="1" name="rating" /> 
+            <input type="radio" class="rating__item" value="2" name="rating" />
+            <input type="radio" class="rating__item" value="3" name="rating" />
+            <input type="radio" class="rating__item" value="4" name="rating" />
+            <input type="radio" class="rating__item" value="5" name="rating" />
+          </div>
+        </div>
+        <div class="rating__value">3.5</div>
+      </div>
+
+      <form action="#" class="popup__form form">
+        <div class="form__line">
+					<div class="popup__form-textarea submission-form__input input">
+						<label for="email-in" class="submission-form__label">Отзыв*</label>
+						<textarea id="email-in" type="text" name="message"  data-validate></textarea>
+					</div>
+          <button type="submit" class="popup__form-btn btn btn_black">
+            отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Поставщики -->
+<div id="suppliers" aria-hidden="true" class="popup popup-suppliers">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg class="popup__close-svg">
+          <use xlink:href="#popup-close"></use>
+        </svg>
+      </button>
+      <div class="popup-suppliers__inner d-flex">
+        <div class="popup-suppliers__descp">
+          <div class="popup__content-title">Компания «Ангел Ист Рус»</div>
+          <div class="popup__content-subtitle">
+            Компания «Ангел Ист Рус» – дочернее подразделение китайской компании
+            «Angel Yeast Co., Ltd» – одного из крупнейших в мире производителей
+            дрожжей. Продукцию компании знают в более чем 20 странах и регионах
+            мира. Продукция «Angel Yeast» пользуется огромным успехом среди
+            простых людей и специалистов.
+          </div>
+        </div>
+        <div class="popup-suppliers__img">
+          <img src="@img/brends/01.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Сookie -->
+<div class="popup-cookie cookie_notice">
+	<div class="popup-cookie__wrap">
+  <div class="popup-cookie__body">
+    <div class="popup-cookie__icon">
+      <svg class="popup-cookie__icon-svg">
+        <use xlink:href="#cookie"></use>
+      </svg>
+    </div>
+    <div class="popup-cookie__text">
+      Мы используем cookies, чтобы сделать наш сайт еще лучше!
+    </div>
+    <a href="#close" type="button" id="cookie_close" class="popup-cookie__icon-closed cookie_btn">
+      <svg class="popup-cookie__icon-closed-svg">
+        <use xlink:href="#popup-close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+</div>

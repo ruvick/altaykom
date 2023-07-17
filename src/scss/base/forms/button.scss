@@ -1,0 +1,106 @@
+// Кнопки
+//<BUTTONS для форм (a.btn+tab)>
+// Снипет (HTML): btn
+.button {
+	font-family: "Lack", sans-serif;
+	display: inline-flex;
+	padding: 0px 0px;
+
+	@media (any-hover: hover) {
+		&:hover {}
+	}
+
+	&._fw {
+		width: 100%;
+	}
+}
+
+// Стандартный класс кнопки
+.btn {
+	// font-family: "Lack", sans-serif;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 18px;
+	padding: 16px 30px;
+	color: #161615;
+	background-color: #fff;
+	border: 1px solid #221F20;
+	border-radius: 15px;
+	transition: $mainTransition;
+
+	&:hover {
+		color: #fff;
+		background-color: #221F20;
+	}
+
+	&.fw {
+		width: 100%;
+	}
+}
+
+// Кнопка назад 
+.back-btn {
+	font-family: "Lack", sans-serif;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	// line-height: 1;
+	padding: 12px 20px;
+	border-radius: 15px;
+	background-color: #f3f3f4;
+	border: 1px solid #221f20;
+	transition: $mainTransition;
+
+	&:hover {
+		color: #fff;
+		background-color: #221F20;
+	}
+	svg {
+		transition: $mainTransition;
+	}
+}
+
+.back-btn__icon {
+	width: 18px;
+	flex: 0 0 18px;
+	height: 7px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.back-btn:hover .back-btn__icon {
+	fill: #fff;
+}
+
+// Кнопка черная 
+.btn_black {
+	color: #fff;
+	background: #221F20;
+	transition: $mainTransition;
+
+	&:hover{
+		opacity: 0.7;
+		color: #fff;
+    background: #221F20;
+	}
+}
+
+.btn_width {
+	width: 100%;
+}
+
+// Класс кнопки в форме
+.form__btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 18px;
+	padding: 16px 30px;
+	color: #fff;
+	border: 1px solid #221F20;
+	border-radius: 15px;
+	background-color: #221F20;
+}

@@ -1,0 +1,106 @@
+// Хлебные крошки ===============================================================================================================================================
+.breadcrumbs {
+	padding-top: 40px;
+}
+
+.breadcrumbs__inner {
+	display: flex;
+	align-items: center;
+
+	a {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #8F8E8E;
+		text-decoration: none;
+		white-space: nowrap;
+		margin: 0 15px;
+		transition: $mainTransition;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:hover {
+			color: #221F20;
+		}
+	}
+
+	span {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 22px;
+		color: #221F20;
+		margin-left: 15px;
+		white-space: nowrap;
+	}
+}
+
+// pagging =====================================================================================================================================
+.pagging {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	// .pagging__arrow
+	&__arrow {}
+
+	// .pagging__list
+	&__list {
+		display: flex;
+
+		li {}
+	}
+
+	// .pagging__item
+	&__item {
+		&._active {}
+	}
+}
+
+.pagging {}
+
+.pagging__arrow {}
+
+.pagging__list {
+	display: flex;
+	align-items: center;
+	margin: 0 30px;
+
+	li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 2px;
+	}
+
+	span {
+		&:hover {
+			background: none;
+		}
+	}
+}
+
+.pagging__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+	color: #161615;
+	border-radius: 15px;
+
+	&:hover {
+		background: #E3E3E3;
+	}
+}
+
+.pagging__item._active {
+	border: 1px solid #161615;
+
+	&:hover {
+		background: none;
+	}
+}

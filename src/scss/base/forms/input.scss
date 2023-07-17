@@ -1,0 +1,109 @@
+//<INPUT>
+// Снипет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type="radio"] {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+
+input {
+	width: 100%;
+	padding: 0px 20px;
+}
+
+.input {
+	display: flex;
+	width: 100%;
+	height: 56px;
+	// padding: 0px 20px;
+	color: #8F8E8E;
+	border-radius: 15px;
+	border: 1px solid #E3E3E3;
+	transition: $mainTransition;
+	&:hover {
+		border: 1px solid #221F20;
+	}
+
+	&._focus {
+		// background: grey;
+		border: 1px solid #000;
+	}
+
+	&._error {
+		border: 1px solid #EA2838;
+	}
+}
+
+.input._form-error {
+	border: 1px solid #EA2838;
+}
+
+textarea {
+	width: 100%;
+	height: 100%;
+	resize: none;
+	padding: 20px;
+}
+textarea::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar {
+	display: none;
+}
+
+input[type=range] {
+	cursor: pointer;
+}
+
+// Описываем focus label, подписи поля или блок
+// .form__line._focus .form__label {
+// 	background: red;
+// }
+
+// // Описываем ошибку label, подписи поля или блок
+// .form__line._error .form__label {
+// 	color: red;
+// }
+
+// Стилизация placeholder 
+::-webkit-input-placeholder {
+	color: #8F8E8E;
+}
+
+::-moz-placeholder {
+	color: #8F8E8E;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+	color: #8F8E8E;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+	color: #8F8E8E;
+}
+
+// Убираем стрелки у цифрового инпута
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0;
+	/* <-- Apparently some margin are still there even though it's hidden */
+}

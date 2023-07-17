@@ -1,0 +1,170 @@
+// <SELECT>
+// Снипет (HTML): sel
+.select {
+	position: relative;
+
+	// .select__body
+	&__body {
+		position: relative;
+		display: flex;
+	}
+
+	// .select__title
+	&__title {
+		font-size: 14px;
+		font-weight: 700;
+		color: inherit;
+		text-align: center;
+		width: 100%;
+		padding: 10.5px 11px;
+		border-radius: 15px;
+		background: #fff;
+		border: 1px solid #e3e3e3;
+		cursor: pointer;
+		transition: $mainTransition;
+		&:hover {
+			border: 1px solid #221F20;
+		}
+	}
+
+
+	// .select__value
+	&__value {
+		display: flex;
+		align-items: center;
+		/* height: 40px; */
+		/* padding: 0px 15px; */
+		justify-content: space-between;
+		flex-direction: row-reverse;
+
+		&::after {
+			content: '';
+			float: left;
+			width: 17px;
+			flex: 0 0 17px;
+			height: 17px;
+			margin-right: 8px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNyAxNyI+DQogIDxkZWZzPg0KICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj4NCiAgICAgIDxyZWN0IGlkPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQul8xMDY5IiBkYXRhLW5hbWU9ItCf0YDRj9C80L7Rg9Cz0L7Qu9GM0L3QuNC6IDEwNjkiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMuNzc4IDEwKSIgZmlsbD0iIzIyMWYyMCIgc3Ryb2tlPSIjNzA3MDcwIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgICA8L2NsaXBQYXRoPg0KICA8L2RlZnM+DQogIDxnIGlkPSJJY29uX21hdGVyaWFsLXNvcnQiIGRhdGEtbmFtZT0iSWNvbiBtYXRlcmlhbC1zb3J0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMuNzc4IC0xMCkiIGNsaXAtcGF0aD0idXJsKCNjbGlwLXBhdGgpIj4NCiAgICA8cGF0aCBpZD0iSWNvbl9tYXRlcmlhbC1zb3J0LTIiIGRhdGEtbmFtZT0iSWNvbiBtYXRlcmlhbC1zb3J0IiBkPSJNNC41LDIwLjMzM2g1LjY2N1YxOC40NDRINC41Wk00LjUsOXYxLjg4OWgxN1Y5Wm0wLDYuNjExSDE1LjgzM1YxMy43MjJINC41WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMjc4IDQpIiBmaWxsPSIjMjIxZjIwIi8+DQogIDwvZz4NCjwvc3ZnPg0K');
+		}
+
+		&:before {
+			content: "";
+			/* align-self: stretch; */
+			flex: 0 0 7.8px;
+			width: 7.8px;
+			height: 7px;
+			transition: all 0.3s ease 0s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 13px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3Ljc3OCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgNy43NzggNyI+DQogIDxwYXRoIGlkPSJOZXh0IiBkPSJNMy4wMTUsMS41NzNhMSwxLDAsMCwxLDEuNzQ4LDBMNi45NTIsNS41MTRBMSwxLDAsMCwxLDYuMDc4LDdIMS43QTEsMSwwLDAsMSwuODI1LDUuNTE0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy43NzggNykgcm90YXRlKDE4MCkiIGZpbGw9IiMyMjFmMjAiLz4NCjwvc3ZnPg0K');
+
+			._select-open & {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+	}
+
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+
+	// .select__options
+	&__options {
+		color: #000;
+		position: absolute;
+		top: 56px;
+		z-index: 15;
+		border-radius: 15px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		min-width: 240px;
+		left: -48px;
+		background-color: #fff;
+		padding: 20px;
+	}
+
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		// Максимальная высота
+		max-height: 200px;
+
+		// Стили скроллбара
+		.simplebar-scrollbar {
+			&::before {
+				//opacity: 1;
+			}
+		}
+	}
+
+	// .select__option
+	&__option {
+		width: 100%;
+		display: block;
+		text-align: left;
+		font-size: 14px;
+		line-height: 20px/14px*100%;
+		cursor: pointer;
+		padding: 5px 15px;
+		color: inherit;
+		transition: $mainTransition;
+		&._select-selected {
+			background-color: #eee;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #C5934F;
+				// background: #d9d9d9;
+			}
+		}
+	}
+
+	// Конструкция дополнительных данных
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	&__asset {}
+
+	&__text {}
+
+	// Состояния селекта
+	&._select-open {
+		z-index: 150;
+	}
+
+	&._select-disabled {}
+
+	&._select-active {}
+
+	&._select-focus {}
+
+	&._select-multiple {}
+
+	&._select-checkbox {}
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}
+
+.select__option._select-selected {
+	display: none;
+}

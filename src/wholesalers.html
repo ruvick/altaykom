@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Оптовикам"
+})
+
+<body>
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-typical">
+			@@include('html/components/_lineBlock.htm',{})
+
+			<div class="breadcrumbs">
+				<div class="_container">
+					<div class="breadcrumbs__inner">
+						<a href="home.html"> главная </a> /
+						<span class="breadcrumb_last" aria-current="page">оптовикам</span>
+					</div>
+				</div>
+			</div>
+
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__title title-main">
+						всё для вашего <br>
+						бизнеса
+					</div>
+				</div>
+			</section>
+
+			<section class="typical-section section">
+				<div class="_container">
+
+					<div class="typical-block d-flex">
+
+						<div class="typical-block__content">
+							<ul>
+								<li>
+									Выгодные цены на миллионы товаров
+								</li>
+								<li>
+									Быстрая доставка по всей России
+								</li>
+								<li>
+									Удобный документооборот и возмещение НДС
+								</li>
+							</ul>
+							<button class="typical-btn btn btn_black">войти как юридическое лицо</button>
+						</div>
+
+						<div class="typical-block__img">
+							<img src="@img/typical/03.jpg" alt="Картинка блока">
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section id="our-clients" class="our-clients section">
+				<div class="_container">
+					<div class="titleBlock">
+						<div class="our-clients__title title">
+							для клиентов любого масштаба
+						</div>
+					</div>
+					<div class="our-clients__subtitle subtitle">
+						<p>
+							Компания «Алтайком» приглашает руководителей и специалистов
+							кондитерских и хлебопекарных предприятий к <span>сотрудничеству</span>
+						</p>
+					</div>
+
+					<div class="our-clients__inner d-flex">
+						<div class="our-clients__column">
+							<a href="#" class="our-clients__card">
+								<div class="our-clients__card-bg">
+								</div>
+								<div class="our-clients__card-img">
+									<img src="img/our-clients/01.jpg" alt="Картинка блока">
+								</div>
+								<div class="our-clients__card-text">Хлебозаводы</div>
+							</a>
+						</div>
+
+						<div class="our-clients__column">
+							<a href="#" class="our-clients__card">
+								<div class="our-clients__card-bg"></div>
+								<div class="our-clients__card-img">
+									<img src="img/our-clients/02.jpg" alt="Картинка блока">
+								</div>
+								<div class="our-clients__card-text">Кондитерские</div>
+							</a>
+						</div>
+
+						<div class="our-clients__column">
+							<a href="#" class="our-clients__card">
+								<div class="our-clients__card-bg"></div>
+								<div class="our-clients__card-img">
+									<img src="img/our-clients/03.jpg" alt="Картинка блока">
+								</div>
+								<div class="our-clients__card-text">Пекарни</div>
+							</a>
+						</div>
+
+						<div class="our-clients__column">
+							<a href="#" class="our-clients__card">
+								<div class="our-clients__card-bg"></div>
+								<div class="our-clients__card-img">
+									<img src="img/our-clients/04.jpg" alt="Картинка блока">
+								</div>
+								<div class="our-clients__card-text">Прочие</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_about.htm',{})
+
+			@@include('html/components/_own-production.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('html/components/_mob-fixed-menu.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
