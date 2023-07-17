@@ -670,23 +670,23 @@ export function menuClose() {
 // 		header.classList.add('_before');
 // 	});
 // }
-// cat-search ================================================================================================================================================================
-const catEntityInp = document.getElementById('cat-entity-input');
-const catEntityCl = document.getElementById('cat-entity-cl');
-const catEntityMenuSearch = document.getElementById('cat-entity-menu-search');
+// // cat-search ================================================================================================================================================================
+// const catEntityInp = document.getElementById('cat-entity-input');
+// const catEntityCl = document.getElementById('cat-entity-cl');
+// const catEntityMenuSearch = document.getElementById('cat-entity-menu-search');
 
-if (catEntityInp) {
-	catEntityInp.addEventListener('click', function () {
-		catEntityMenuSearch.classList.add('_active');
-		catEntityCl.classList.add('_active');
-	});
-}
-if (catEntityCl) {
-	catEntityCl.addEventListener('click', function () {
-		catEntityMenuSearch.classList.remove('_active');
-		catEntityCl.classList.remove('_active');
-	});
-}
+// if (catEntityInp) {
+// 	catEntityInp.addEventListener('click', function () {
+// 		catEntityMenuSearch.classList.add('_active');
+// 		catEntityCl.classList.add('_active');
+// 	});
+// }
+// if (catEntityCl) {
+// 	catEntityCl.addEventListener('click', function () {
+// 		catEntityMenuSearch.classList.remove('_active');
+// 		catEntityCl.classList.remove('_active');
+// 	});
+// }
 // FiltersMob =========================================================================================================================================================================================
 const filterMobFl = document.querySelector('.filter-mob-block__btn_fl');
 const filterMobSl = document.querySelector('.filter-mob-block__btn_sl');

@@ -163,6 +163,7 @@ if (document.documentElement.clientWidth > 1024) {
 				if (showedWindow == "searchFormInput") toggleSearch()
 				if (showedWindow == "physicalListPerson") toggleMyLists()
 				if (showedWindow == "multicorzineLegalEntity") toggleMultyBascet()
+				if (showedWindow == "catEntityMenuSearch") toggleCatSearch()
 			}
 		};
 	})
@@ -172,6 +173,46 @@ if (shadow) {
 		toggleCatalog()
 		console.log("shadow")
 	});
+}
+// cat-search ================================================================================================================================================================
+const catEntityInp = document.getElementById('cat-entity-input');
+const catEntityCl = document.getElementById('cat-entity-cl');
+const catEntityMenuSearch = document.getElementById('cat-entity-menu-search');
+const catalogEntitySec = document.querySelector('.catalog-entity-sec');
+
+function toggleCatSearch() {
+	if (catEntityInp) {
+		catEntityInp.addEventListener('click', function () {
+			catEntityMenuSearch.classList.toggle('_active');
+			catEntityCl.classList.toggle('_active');
+			catalogEntitySec.classList.toggle('_before');
+		});
+	}
+	if (catEntityCl) {
+		catEntityCl.addEventListener('click', function () {
+			catEntityMenuSearch.classList.toggle('_active');
+			catEntityCl.classList.toggle('_active');
+			catalogEntitySec.classList.toggle('_before');
+		});
+	}
+	showedWindow = (catEntityInp.classList.contains("_active")) ? "cat-entity-menu-search" : ""
+	console.log("Открыто: " + showedWindow)
+	if (showedWindow == "catEntityInp")
+		bodyLockMain()
+	else
+		bodyUnlockMain()
+}
+
+catEntityInp.onclick = (e) => {
+	e.preventDefault()
+	toggleCatSearch()
+	bodyLockMain()
+}
+
+catEntityCl.onclick = (e) => {
+	e.preventDefault()
+	toggleCatSearch()
+	bodyUnlockMain()
 }
 // Menu Catalog ======================================================================================================================================================================
 if (document.documentElement.clientWidth > 768) {
