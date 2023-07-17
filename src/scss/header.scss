@@ -46,7 +46,7 @@
 @media (min-width: 769px) {
 	.header._before {
 		content: "";
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		flex: 0 0 100%;
