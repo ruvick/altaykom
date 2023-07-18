@@ -357,3 +357,17 @@ export function formRating() {
 		}
 	}
 }
+
+// calendar 
+import AirDatepicker from 'air-datepicker';
+new AirDatepicker('.calendar', {
+	inline: true,
+	range: true,
+	multipleDatesSeparator: ' - '
+});
+
+new AirDatepicker('.calendar-two', {
+	inline: true,
+	range: true,
+	multipleDatesSeparator: ' - '
+});
