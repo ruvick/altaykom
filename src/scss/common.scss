@@ -470,7 +470,7 @@
 	transition: $mainTransition;
 	pointer-events: none;
 
-	// display: none !important;
+	display: none;
 }
 
 .menu-lineBlock .sub-list::-webkit-scrollbar-thumb,
@@ -479,6 +479,7 @@
 }
 
 .sub-list._active {
+	display: flex;
 	opacity: 1;
 	visibility: visible;
 	overflow: visible;
@@ -496,10 +497,12 @@
 // }
 
 .sub-list-block {
-	display: block;
+	display: none;
 	min-width: 427px;
 }
-
+.sub-list-block._active {
+	display: block;
+}
 .sub-list__item {
 	display: flex;
 	flex: 0 1 50%;

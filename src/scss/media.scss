@@ -12,11 +12,17 @@
 	.swiper-button {
 		position: static;
 	}
+	.header__multicorzine {
+    right: -35px;
+	}
 }
 
 @media (max-width: 1500px) {
 	.footer {
 		padding: 50px 50px 28px 50px;
+	}
+	.header__multicorzine {
+    right: 0px;
 	}
 }
 
@@ -326,10 +332,10 @@
 
 	.menu-lineBlock {
 		flex-wrap: nowrap;
-		margin: 0 -10px;
+		// margin: 0 -10px;
 		width: auto;
 		overflow-x: auto;
-		overflow-y: hidden;
+		// overflow-y: hidden;
 	}
 
 	.menu-lineBlock::-webkit-scrollbar,
@@ -1639,7 +1645,7 @@
 	}
 }
 
-@media (max-width: 730px) {
+@media (max-width: 730px) { 
 	.categoriesImgBlock {
 		flex-wrap: wrap;
 	}
@@ -1659,6 +1665,12 @@
 	.orders-box__payment {
 		margin-left: 0;
 		margin-top: 10px;
+	}
+	.lc-physical-person__tabs .table {
+		width: auto;
+		overflow: auto;
+		white-space: nowrap;
+		display: block;
 	}
 }
 
