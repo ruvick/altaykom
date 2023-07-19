@@ -7537,6 +7537,41 @@ ul .content-article__descriptioni-list-item {
 .lc-table-card__footer-btn {
 	margin-top: 20px;
 }
+
+.button-history {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.button-history-label {
+	cursor: pointer;
+	margin-right: 10px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.button-history-label__input {
+	
+}
+.button-history-label__btn {
+	position: relative;
+	font-size: 14px;
+	color: #8F8E8E;
+	padding: 10px 23px;
+	border: 1px solid #E3E3E3;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.button-history-label__name {
+
+}
+.button-history-label input[type=radio]:checked + .button-history-label__btn {
+	color: #161615;
+	background: #F3F3F4;
+	border: 1px solid #F3F3F4;
+}
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
