@@ -62,7 +62,7 @@
 
 										<div class="lc-physical-person__select-inner">
 
-											<div data-spollers	class="lc-physical-person__select-block catalog-entity-filters__filters-block spollers _spoller-init">
+											<div data-spollers data-one-spoller	class="lc-physical-person__select-block catalog-entity-filters__filters-block spollers _spoller-init">
 
 												<div class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
 													<div data-spoller="" class="filters-catalog-item__title spollers__title">Статус заказа<span>:
@@ -217,7 +217,7 @@
 
 										<div class="lc-physical-person__select-inner">
 
-											<div data-spollers	class="lc-physical-person__select-block catalog-entity-filters__filters-block spollers _spoller-init">
+											<div data-spollers data-one-spoller	class="lc-physical-person__select-block catalog-entity-filters__filters-block spollers _spoller-init">
 
 												<div class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
 													<div data-spoller="" class="filters-catalog-item__title spollers__title">Статус заказа<span>:
@@ -314,8 +314,9 @@
 											<tbody>
 
 												<tr>
-													<td>
+													<td class="menuTabOp">
 														<div>5503240</div>
+														@@include('html/components/_lc-table-card.htm',{})
 													</td>
 													<td><span class="sticker-product sticker-product_red">не оплачен</span></td>
 													<td>Самовывоз</td>
@@ -338,8 +339,9 @@
 												</tr>
 
 												<tr>
-													<td>
+													<td class="menuTabOp">
 														<div>5503240</div>
+														@@include('html/components/_lc-table-card.htm',{})
 													</td>
 													<td><span class="sticker-product sticker-product_green">оплачен</span></td>
 													<td>Самовывоз</td>
@@ -362,8 +364,9 @@
 												</tr>
 
 												<tr>
-													<td>
+													<td class="menuTabOp">
 														<div>5503240</div>
+														@@include('html/components/_lc-table-card.htm',{})
 													</td>
 													<td><span class="sticker-product sticker-product_grey">отменен</span></td>
 													<td>Самовывоз</td>
@@ -388,32 +391,80 @@
 									<div class="tabs__body">
 
 										<div class="lc-physical-person__select-inner">
-											<div class="lc-physical-person__select-block">
-												<div class="lc-physical-person__select-block-select">
-													<select name="form[]" class="form">
-														<option value="1" selected="selected">Статус заказа</option>
-														<option value="2">Пункт №2</option>
-														<option value="3">Пункт №3</option>
-														<option value="4">Пункт №4</option>
-													</select>
+
+											<div data-spollers data-one-spoller	class="lc-physical-person__select-block catalog-entity-filters__filters-block spollers _spoller-init">
+
+												<div class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
+													<div data-spoller="" class="filters-catalog-item__title spollers__title">Статус заказа<span>:
+															<span class="filters-catalog-item__title-value">0</span></span></div>
+													<div class="filters-catalog-item__menu menu-filters-catalog spollers__body" hidden="">
+														<form action="#" class="menu-filters-catalog__form">
+
+															<div class="menu-filters-catalog__column">
+																<label data-index="0" class="checkbox">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
+																	<span class="checkbox__text"><span>Создан</span></span>
+																</label>
+																<label data-index="0" class="checkbox">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
+																	<span class="checkbox__text"><span>Подтвержден</span></span>
+																</label>
+																<label data-index="0" class="checkbox">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
+																	<span class="checkbox__text"><span>Доставка</span></span>
+																</label>
+																<label data-index="0" class="checkbox">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
+																	<span class="checkbox__text"><span>Готов к выдаче</span></span>
+																</label>
+																<label data-index="0" class="checkbox">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
+																	<span class="checkbox__text"><span>Получен</span></span>
+																</label>
+															</div>
+
+														</form>
+													</div>
 												</div>
-												<div class="lc-physical-person__select-block-select">
-													<select name="form[]" class="form">
-														<option value="1" selected="selected">Дата заказа</option>
-														<option value="2">Пункт №2</option>
-														<option value="3">Пункт №3</option>
-														<option value="4">Пункт №4</option>
-													</select>
+
+												<div class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
+													<div data-spoller="" class="filters-catalog-item__title spollers__title">Дата заказа<span>:
+															<span class="filters-catalog-item__title-value">0</span></span></div>
+													<div class="filters-catalog-item__menu menu-filters-catalog calendar calendar-three spollers__body" hidden="">
+													</div>
 												</div>
-												<div class="lc-physical-person__select-block-select">
-													<select name="form[]" class="form">
-														<option value="1" selected="selected">Сумма заказа</option>
-														<option value="2">Пункт №2</option>
-														<option value="3">Пункт №3</option>
-														<option value="4">Пункт №4</option>
-													</select>
+
+												<div class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
+													<div data-spoller="" class="filters-catalog-item__title spollers__title">Сумма заказа<span>:
+															<span class="filters-catalog-item__title-value">0</span></span></div>
+													<div class="filters-catalog-item__menu menu-filters-catalog spollers__body" hidden="">
+														<div class="price-input">
+
+															<div class="field">
+																<input type="number" class="input-min" value="0">
+															</div>
+															<div class="field">
+																<input type="number" class="input-max" value="10000">
+															</div>
+														</div>
+														<div class="slider">
+															<div class="progress"></div>
+														</div>
+
+														<div class="range-input">
+															<input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+															<input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
+														</div>
+													</div>
 												</div>
+
 											</div>
+
 											<div class="lc-physical-person__select-buttons">
 												<button data-tippy-content="" type="button" class="btn-icon-big">
 													<svg class="btn-icon-big__icon">
@@ -438,8 +489,9 @@
 											<tbody>
 
 												<tr>
-													<td>
+													<td class="menuTabOp">
 														<div>5503240</div>
+														@@include('html/components/_lc-table-card.htm',{})
 													</td>
 													<td><span class="sticker-product sticker-product_green">создан</span></td>
 													<td>Самовывоз</td>
@@ -462,8 +514,9 @@
 												</tr>
 
 												<tr>
-													<td>
+													<td class="menuTabOp">
 														<div>5503240</div>
+														@@include('html/components/_lc-table-card.htm',{})
 													</td>
 													<td><span class="sticker-product sticker-product_green">согласован</span></td>
 													<td>Самовывоз</td>
@@ -486,8 +539,9 @@
 												</tr>
 
 												<tr>
-													<td>
+													<td class="menuTabOp">
 														<div>5503240</div>
+														@@include('html/components/_lc-table-card.htm',{})
 													</td>
 													<td><span class="sticker-product sticker-product_grey">отменен</span></td>
 													<td>Самовывоз</td>
@@ -539,8 +593,7 @@
 												<div class="new-lists__column">
 													<div class="new-lists__card card-new-list _ibg">
 														<div class="card-new-list__title">Новый Год</div>
-														<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25
-																000.00</span></div>
+														<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
 														<div class="card-new-list__image">
 															<div class="card-new-list__image-img-bg">
 															</div>

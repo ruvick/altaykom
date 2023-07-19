@@ -371,3 +371,9 @@ new AirDatepicker('.calendar-two', {
 	range: true,
 	multipleDatesSeparator: ' - '
 });
+
+new AirDatepicker('.calendar-three', {
+	inline: true,
+	range: true,
+	multipleDatesSeparator: ' - '
+});
