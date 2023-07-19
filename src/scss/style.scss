@@ -4794,6 +4794,7 @@ body.padding {
 
 .orders-box__column {
 	display: flex;
+	flex-wrap: wrap;
 	margin-right: 20px;
 
 	&:last-child {
@@ -7545,8 +7546,10 @@ ul .content-article__descriptioni-list-item {
 	margin-bottom: 30px;
 }
 .button-history-label {
+	display: flex;
 	cursor: pointer;
 	margin-right: 10px;
+	margin-bottom: 10px;
 	&:last-child{
 		margin-right: 0;
 	}
