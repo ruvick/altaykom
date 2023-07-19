@@ -1643,6 +1643,9 @@
 	.service-banner__text .title {
 		width: 100%;
 	}
+	.lc-physical-person__main {
+    overflow: hidden;
+	}
 }
 
 @media (max-width: 730px) { 
@@ -2108,7 +2111,7 @@
 	}
 }
 
-@media (max-width: 515px) {
+@media (max-width: 515px) { 
 	.slider-info__slide {
 		padding-bottom: 31%;
 	}
@@ -2521,6 +2524,12 @@
 
 	.catalog-entity-table {
 		padding: 0;
+	}
+	.lc-table-card {
+    max-height: max-content;
+	}
+	.filters-catalog-item__menu {
+    width: 100%;
 	}
 }
 
