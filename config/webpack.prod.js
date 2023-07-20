@@ -16,12 +16,12 @@ const paths = {
 const config = {
 	mode: "production",
 	optimization: {
-		minimize: true,
+		minimize: false,
 		minimizer: [new TerserPlugin()],
 	},
 	output: {
 		path: `${paths.build}`,
-		filename: 'app.min.js',
+		filename: 'app.js',
 		publicPath: '/',
 	},
 	module: {
