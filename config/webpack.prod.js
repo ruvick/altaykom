@@ -16,7 +16,7 @@ const paths = {
 const config = {
 	mode: "production",
 	optimization: {
-		minimize: false,
+		minimize: true,
 		minimizer: [new TerserPlugin()],
 	},
 	output: {
