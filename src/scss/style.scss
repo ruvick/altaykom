@@ -7579,13 +7579,17 @@ ul .content-article__descriptioni-list-item {
 	overflow: hidden;
 	transition: all 0.5s;
 }
-.button-history-label__name {
+.button-history-label__name { 
 
 }
 .button-history-label input[type=radio]:checked + .button-history-label__btn {
 	color: #161615;
 	background: #F3F3F4;
 	border: 1px solid #F3F3F4;
+}
+
+.lc-physical-person__table-inner {
+	
 }
 //========================================================================================================================================================
 

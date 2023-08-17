@@ -30,8 +30,8 @@ export class Popup {
 			bodyLockDelay: 500, // Задержка блокировки скролла
 
 			hashSettings: {
-				location: true, // Хэш в адресной строке
-				goHash: true, // Переход по наличию в адресной строке
+				location: false, // Хэш в адресной строке
+				goHash: false, // Переход по наличию в адресной строке
 			},
 
 			on: { // События
