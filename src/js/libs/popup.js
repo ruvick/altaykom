@@ -30,8 +30,8 @@ export class Popup {
 			bodyLockDelay: 500, // Задержка блокировки скролла
 
 			hashSettings: {
-				location: false, // Хэш в адресной строке
-				goHash: false, // Переход по наличию в адресной строке
+				location: true, // Хэш в адресной строке
+				goHash: true, // Переход по наличию в адресной строке
 			},
 
 			on: { // События
@@ -335,3 +335,12 @@ if (cookiecook != "no") {
 		document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
 	});
 }
+
+
+// if (window.location.hash.initPopups() == "#order-service") {
+// 	initPopups('#order-service').hide();
+// }
+
+// initPopups(hash);
+// const popupItem = initPopups();
+// popupItem.open('#order-service');

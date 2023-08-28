@@ -190,6 +190,7 @@ export function formSubmit(validate) {
 					if (popup) {
 						// Нужно подключить зависимость
 						popupItem.open(`#${popup}`);
+						console.log(popupItem);
 					}
 					formValidate.formClean(form);
 				} else {

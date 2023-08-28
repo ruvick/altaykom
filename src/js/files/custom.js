@@ -332,15 +332,19 @@ if (document.documentElement.clientWidth > 1024) {
 	for (let i = 0; i < menuLineBlockItem.length; i++) {
 		menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
 			let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-			child.classList.add('_active');
-			lineBlockBlk.classList.add('_active');
-			// bodyLockToggle();
+			if (child) {
+				child.classList.add('_active');
+				lineBlockBlk.classList.add('_active');
+				// bodyLockToggle();
+			}
 		})
 		menuLineBlockItem[i].addEventListener('mouseleave', () => {
 			let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-			child.classList.remove('_active');
-			lineBlockBlk.classList.remove('_active');
-			// bodyLockToggle();
+			if (child) {
+				child.classList.remove('_active');
+				lineBlockBlk.classList.remove('_active');
+				// bodyLockToggle();
+			}
 		})
 	}
 	// }
@@ -432,3 +436,5 @@ if (physicalCl) {
 		toggleMyLists();
 	});
 }
+
+
