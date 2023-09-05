@@ -343,12 +343,12 @@ if (document.documentElement.clientWidth > 1024) {
 			if (child) {
 				child.classList.remove('_active');
 				lineBlockBlk.classList.remove('_active');
-				// bodyLockToggle();
+				// bodyLockToggle(); 
 			}
 		})
 	}
 	// }
-	// menuHover();
+	// menuHover(); 
 }
 // Open multicorzine ======================================================================================================================================================================================
 

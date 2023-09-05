@@ -7592,6 +7592,54 @@ ul .content-article__descriptioni-list-item {
 	
 }
 //========================================================================================================================================================
+.card-product__descSticFlex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 8px;
+}
+.card-product__descp-sticker {
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.card-product__descp-sticker:last-child {
+	margin-right: 0;
+}
+//========================================================================================================================================================
+.interactive-adding-new {
+	align-items: center;
+}
+.interactive-adding-new .quantity {
+	width: auto;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+.interactive-adding-new .interactive-adding-bascet__button {
+	// margin-left: 10px;
+}
+.interactive-adding-new .quantity__button::before, .interactive-adding-new .quantity__button::after {
+	margin: 0;
+	display: none;
+}
+.interactive-adding-new .quantity__button {
+    /* flex: 0 0 30px; */
+    flex: 0;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: grey;
+}
+.interactive-adding-new .quantity__input {
+	flex: 1 1 20px;
+}
+.interactive-adding-new .quantity__input input {
+	padding: 0;
+}
+//========================================================================================================================================================
 
 // АДАПТИВ ==========================================
 @import "media";

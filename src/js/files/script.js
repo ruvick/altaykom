@@ -21,30 +21,30 @@ function getFileName() {
 	document.getElementById('file-names').innerHTML = '' + file;
 }
 // Переключение корзины в карточке товаров ======================================================================================================================================================================
-const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
+// const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
 
-interAddingBascetBtn.forEach((btn, index) => {
-	btn.addEventListener('click', () => {
+// interAddingBascetBtn.forEach((btn, index) => {
+// 	btn.addEventListener('click', () => {
 
-		if (btn) {
-			let interAddingBascet = btn.closest('.interactive-adding-bascet');
+// 		if (btn) {
+// 			let interAddingBascet = btn.closest('.interactive-adding-bascet');
 
-			if (!!interAddingBascet) {
-				interAddingBascet.classList.add('none');
-			}
+// 			if (!!interAddingBascet) {
+// 				interAddingBascet.classList.add('none');
+// 			}
 
-			let interContainer = btn.closest('.card-product__interactive-adding');
+// 			let interContainer = btn.closest('.card-product__interactive-adding');
 
-			if (!!interContainer) {
-				let interAddingQuantity = interContainer.querySelector('.interactive-adding-quantity');
+// 			if (!!interContainer) {
+// 				let interAddingQuantity = interContainer.querySelector('.interactive-adding-quantity');
 
-				if (interAddingQuantity) {
-					interAddingQuantity.classList.add('active');
-				}
-			}
-		}
-	})
-})
+// 				if (interAddingQuantity) {
+// 					interAddingQuantity.classList.add('active');
+// 				}
+// 			}
+// 		}
+// 	})
+// })
 // Переключение вида списка товаров ======================================================================================================================================================================
 const productsViewToggle = document.querySelectorAll('.swith-control__btn');
 

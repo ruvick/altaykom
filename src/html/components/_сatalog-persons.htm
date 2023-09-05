@@ -20,7 +20,7 @@
 				</div>
 				<div class="directory-management-sorting-select">
 					<select name="form[]" class="form">
-						<option value="1" selected>По популярности</option>
+						<option value="1" selected>По популярности</option>   
 						<option value="2">По скидке</option>
 						<option value="3">Сначала дороже</option>
 						<option value="4">Сначала дешевле</option>
@@ -292,7 +292,9 @@
 								<a href="#" class="card-product__descp-title">
 									Кубики цукатные из апельсиновой цедры
 								</a>
-								<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
+								<div class="card-product__descSticFlex">
+									<span class="card-product__descp-sticker sticker-product-value">5 кг</span> 
+								</div>
 							</div>
 
 							<div class="card-product__interactive">
@@ -310,36 +312,22 @@
 									</div>
 								</div>
 
-								<div class="card-product__interactive-adding">
-									<div class="interactive-adding-bascet">
-										<div class="interactive-adding-bascet__value">
-											<div class="interactive-adding-bascet__value-quantity">
-												1 шт.
+								<div class="card-product__interactive-adding interactive-adding-new">
+										<div class="quantity">
+											<div class="quantity__button quantity__button_minus _icon-minus">-</div>
+											<div class="quantity__input">
+												<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+													value="1" />
 											</div>
-											<div class="interactive-adding-bascet__value-price rub">
-												670.00
-											</div>
+											<div class="quantity__button quantity__button_plus _icon-plus">+</div>
 										</div>
 										<button class="interactive-adding-bascet__button">
 											<svg class="interactive-adding-bascet__button-icon">
 												<use xlink:href="#bascet-btn-product"></use>
 											</svg>
 										</button>
-									</div>
-
-									<div class="interactive-adding-quantity">
-										<div class="quantity">
-											<div class="quantity__button quantity__button_minus _icon-minus"></div>
-											<div class="quantity__input">
-												<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
-													value="1" />
-												<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
-													value="670.00" />
-											</div>
-											<div class="quantity__button quantity__button_plus _icon-plus"></div>
-										</div>
-									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
