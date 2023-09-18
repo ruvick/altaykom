@@ -197,7 +197,7 @@ function initSliders() {
 			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			// slidesPerView: 1,
 			initialSlide: 1,
 			//preloadImages: false,
@@ -274,7 +274,7 @@ function initSliders() {
 			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
@@ -313,13 +313,13 @@ function initSliders() {
 					slidesPerView: 4.6,
 				},
 				1025: {
-					slidesPerView: 5.6,
+					slidesPerView: 4.6,
 				},
 				1200: {
-					slidesPerView: 6.2,
+					slidesPerView: 5.2,
 				},
 				1331: {
-					slidesPerView: 7,
+					slidesPerView: 6,
 					spaceBetween: 20,
 				},
 			},
@@ -412,7 +412,7 @@ function initSliders() {
 			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
@@ -482,7 +482,7 @@ function initSliders() {
 			slideToClickedSlide: true,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			slideToClickedSlide: true,
 			//preloadImages: false,
 			//lazy: true,
@@ -492,10 +492,10 @@ function initSliders() {
 			//	clickable: true,
 			//},
 			// Arrows
-			navigation: {
-				nextEl: '.slider-info__button-next',
-				prevEl: '.slider-info__button-prev',
-			},
+			// navigation: {
+			// 	nextEl: '.slider-info__button-next',
+			// 	prevEl: '.slider-info__button-prev',
+			// },
 			/*
 			breakpoints: {
 				320: {
@@ -541,7 +541,7 @@ function initSliders() {
 			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
