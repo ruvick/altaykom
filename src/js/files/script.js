@@ -147,23 +147,23 @@ rangeInput.forEach(input => {
 	});
 });
 // Лайки ================================================================================================================================================================================================
-const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
-const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
+// const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
+// const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
 
-likeButtons.forEach((button, index) => {
-	button.addEventListener("click", () => {
-		button.classList.toggle("is-active");
-		const current = Number(likeCounts[index].innerHTML);
-		const inc = button.classList.contains("is-active") ? 1 : -1;
-		likeCounts[index].innerHTML = current + inc;
-	});
-});
+// likeButtons.forEach((button, index) => {
+// 	button.addEventListener("click", () => {
+// 		button.classList.toggle("is-active");
+// 		const current = Number(likeCounts[index].innerHTML);
+// 		const inc = button.classList.contains("is-active") ? 1 : -1;
+// 		likeCounts[index].innerHTML = current + inc;
+// 	});
+// });
 
-function hasTouch() {
-	return 'ontouchstart' in document.documentElement
-		|| navigator.maxTouchPoints > 0
-		|| navigator.msMaxTouchPoints > 0;
-}
+// function hasTouch() {
+// 	return 'ontouchstart' in document.documentElement
+// 		|| navigator.maxTouchPoints > 0
+// 		|| navigator.msMaxTouchPoints > 0;
+// }
 // Отключаем hover на мобилках ==========================================================================================================================================================================
 if (hasTouch()) {
 	try {
