@@ -436,5 +436,26 @@ if (physicalCl) {
 		toggleMyLists();
 	});
 }
+//========================================================================================================================================================
+
+// Селект с img 
+function showMe(evt) {
+	console.log("evt.value ", evt.value);
+}
+function makeDd() {
+	'use strict';
+	let json = new Function(`return ${document.getElementById('json_data').innerHTML}`)();
+	/*  new MsDropdown("#json_dropdown", {
+			byJson: {
+				 data: json, selectedIndex:1
+			}
+	  })*/
+	MsDropdown.make("#json_dropdown", {
+		byJson: {
+			data: json, selectedIndex: 0
+		}
+	});
+}
+
 
 

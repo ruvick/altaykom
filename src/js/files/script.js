@@ -235,5 +235,17 @@ menuTabOp.forEach((btn, index) => {
 		}
 	})
 })
+//========================================================================================================================================================
+
+// Увеличение таблицы Юр.Лицо
+let zoomBtn = document.querySelector('.catalog-entity-table__icon-zoom');
+let catalogEntityTable = document.querySelector('.catalog-entity-table');
+
+if (zoomBtn) {
+	zoomBtn.addEventListener("click", function (e) {
+		catalogEntityTable.classList.toggle('fullScreen');
+		bodyLockToggle()
+	});
+}
 
 
